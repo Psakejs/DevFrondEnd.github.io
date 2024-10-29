@@ -1,0 +1,39 @@
+¿Qué es y para que sirve HTML y CSS?
+
+HTMl
+lenguaje de marcado de hipertexto, es el codigo que nos ayuda aestructurar toda nuestra pagina web(EL esqueleto de una pagina)
+CSS
+hojas de estilo de cascada, lenguaje que le da estilo al HTML(Colore, tamaños, ubicaciones)
+
+Motores de renderizado
+
+Lo que transforma nuestro codigo en algo visible
+
+Los navegadores web tienen Motores
+
+hacen estos pasos:
+
+1. Pasa los archivos a objetos
+2. Calcula el estilo correspondiente a cada nodo DOM
+3. Calcular las dimensiones de cada uno de los nodos
+4. Pinta las diferentes cajas
+5. Toma todas las capas y las convierte en una imagen para mostrar la pantalla
+
+Anatomia de un elemento HTMl:
+
+Llevan una etiqueta de apertura, el contenido, y una etiqueta de cierre.
+Atributos y valores de los atributos.
+Anidamiento las etiquetas se pueden anidar unas dentro de otras.
+Elementos vacios no todas las etiquetas tiene apertura y cierre.
+
+Anatomia de un documento HTML
+Con el comando shift + 1 crearemos la estructura basica e un HTML
+
+
+
+
+
+
+
+
+
