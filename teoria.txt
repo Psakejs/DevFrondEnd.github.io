@@ -29,8 +29,88 @@ Elementos vacios no todas las etiquetas tiene apertura y cierre.
 Anatomia de un documento HTML
 Con el comando shift + 1 crearemos la estructura basica e un HTML
 
+HTML semantico
+
+Son etiquetas con significado
+
+1. Ayuda a tu sitio a ser accesible
+2. Mejora tu posicionamiento SEO(ver curso accesibilidad web y posicionamiento SEO)
+3. Codigo más claro
+
+Etiquetas más utilizadas
+
+Layout:
+1. Header
+2. Nav 
+3. Section
+4. Article
+5. Aside
+6. Footer
+
+Enlaces:
+1. a
+
+Textos:
+1. H1, H2, H3, H4, H5, H6
+2. p
+3. span
+
+Imagenes y video
+1. Img 
+2. Svg
+3. Iframe
+4. video
+
+Formularios
+1. Form 
+2. Input 
+3. Label 
+4. Button
+
+Listas:
+1. Ul 
+2. Li
+3. Ol 
 
 
+Más referencias:
+En https://htmlreference.io/ se pueden ver más datos sobre los diferentes tipos de etiquetas existentes de HTML
+En https://www.pexels.com/es-es/ se pueden encontrar imagenes gratuitas para nuestras paginas web
+
+
+
+
+CSS
+
+
+Anatomia de una declaración CSS
+
+selector{
+    propiedad:valor;
+}
+
+
+Tipos de selectores:
+
+Basicos:
+
+De tipo: div
+De clase: .elemento
+De id: #id-del-elemento
+De atributo: a[href=""]
+universal: *
+
+
+referencias:
+
+En https://htmlcolorcodes.com/color-names/ podremos ver la lista completa de colores de HTMl además de que podremos crear paletas de colores de una manera muy sencilla
+
+Combinadores:
+
+Descendientes: div p 
+Hijo directo: div > p 
+Elemento adyacente: div + p 
+General de hermanos: div ~ p 
 
 
 
