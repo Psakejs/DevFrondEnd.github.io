@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores combinados</title>
+    <style>
+        div p{
+            background-color: darkcyan;
+        }
+        div > div{
+            background-color: rgb(241, 126, 126);
+        }
+        div + section{
+            background-color: peachpuff;
+        }
+        div ~ p{
+            background-color: paleturquoise;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Hello</p>
+        <p>Everyone</p>
+        <p>GOOD DAY</p>
+    </div>
+    <div>
+        <div>Es</div>
+    </div>
+    <p>Selector class</p>
+    <div>
+        Master
+    </div>
+    <section>
+        The best
+    </section>
+</body>
+</html>
