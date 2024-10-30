@@ -107,10 +107,10 @@ En https://htmlcolorcodes.com/color-names/ podremos ver la lista completa de col
 
 Combinadores:
 
-Descendientes: div p 
-Hijo directo: div > p 
-Elemento adyacente: div + p 
-General de hermanos: div ~ p 
+Descendientes: div p (elemento que esta dentro de los divs)
+Hijo directo: div > p  (elemento que es hijo directo de div)
+Elemento adyacente: div + p (elemento p que tiene a su lado un div)
+General de hermanos: div ~ p (todos los hermanos p que estan despues del div)
 
 
 
