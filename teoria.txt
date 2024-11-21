@@ -112,6 +112,165 @@ Hijo directo: div > p  (elemento que es hijo directo de div)
 Elemento adyacente: div + p (elemento p que tiene a su lado un div)
 General de hermanos: div ~ p (todos los hermanos p que estan despues del div)
 
+Buenas practicas en commits:
+$ git -m "fix:commit" -m "fixed archive"
+poner feat:commit  mensajecommit
+
+feat: Una nueva característica para el usuario.
+fix: Arregla un bug que afecta al usuario.
+perf: Cambios que mejoran el rendimiento del sitio.
+build: Cambios en el sistema de build, tareas de despliegue o instalación.
+ci: Cambios en la integración continua.
+docs: Cambios en la documentación.
+refactor: Refactorización del código como cambios de nombre de variables o funciones.
+style: Cambios de formato, tabulaciones, espacios o puntos y coma, etc; no afectan al usuario.
+test: Añade tests o refactoriza uno existente.
+
+
+Pseudoclases
+Nos ayudan a dar estilos a aquellas actividades o acciones que hace el usuario por ejemplo cuando se pasa el mouse por encima de un boton:
+
+:active 
+:focus 
+:hover 
+:nth-child(n)
+
+
+Pseudoelementos
+Agregar elemtnos a un elemento que ya existe
+
+::after
+::before
+::first-letter
+::placeholder
+
+
+
+CSS
+
+Hojas de estilo en cascada, la cascada significa el orden de las reglas en css importa.
+
+Los navegadores determinan que reglas de css deben aplicarse a las etiquetas HTML y el orden y origen del css, intervienen en este proceso.
+
+Sin embargo no todo es color de rosa, ya que a veces los navegadores entran en conflicto porque no saben que regla aplicar, pero el css tiene una manera de lidiar con los conflictos y esa manera es llamada la especificidad de los selectores, entre mayor especificidad, mayor va a ser la probabilidad de que sus delaraciones se usen sobre las demás, reglas que tienen mayor especificidad:
+
+Especificidad  reglas
+10000        !important
+1000          Estilos en linea
+100          #id
+10           Clases, atributos y pseudoclases
+1            elementos y pseudoelementos
+0            selector universal
+
+
+
+
+Tipos de display más usados en CSS
+Es el tipo de visualización que tienen los elementos
+
+Block
+Tal y como su nombre lo dice llenará una fila completa como si fuera un bloque
+
+Inline
+Estos elemetnos no ocupan toda una fila, solo ocupan el espacio segun el contenido que tengan lo que puede hacer que varios elemetnos con el display inline puedan estar uno al lado del otro
+
+Inline-block
+Combinacion del block y el inline
+
+Flex
+Organizar cajas
+
+Grid
+Organizar cajas
+
+Modelo de caja
+
+Son las cosas que componen cualquier elemento en HTML:
+Border
+margin
+padding
+content
+
+Con box-sizing border-box evitaremos que nuestros elementos tengan cambios en su tamaño a la hora de agregarle margin o border o padding, se adaptara al espacio establecido de nuestro elemento
+
+
+Colapso de margenes
+
+El colapse de margenes se refiere por ejemplo a cuando tenemos dos divs con un margin de 20px cada uno, pero al ver el navegador el margin en conjunto no es de 40px, sino de 20, esto sucede debido a hay dos elementos en bloque que son adayacente lo que ocasiona que las margenes colapsen (Esto solo pasa de forma verticla). No sucede cuando usamos GRID o FlexBox, esto debido a que estan encerrados dentro de un elemento padre.
+
+
+Posicion 
+
+Nos permite ubicar elementos en un espacio determinado, los siguientes son los tipos de posicionamiento en css
+
+absolute
+Nos permite mover un elemento libremente en su CONTENEDOR PADRE, no puede salir de su contenedor padre.
+
+relative
+Nos permite mover un elemento libremente por todo nuestro proyecto, no se limita a un padre
+
+Fixed
+Elemento que permanecera fijo al hacer scroll todo el tiempo
+
+Sticky
+Similar al fixed con la diferencia de que solo permanecera fijo a nuestra pantalla una vez lleguemos a el, por ejemplo haciendo scroll un boton tiene este tipo de posicionamiento entonces una vez lleguemos a el se pegara a nuestra pantalla si seguimos bajando.
+
+Static
+Predeterminado de todas las etiquetas HTML  su posicionamiento es estatico
+
+Initial
+Envia al elemento a su posicion inicial
+
+Inherital
+Hereda el posicionamiento de su padre
+
+
+z-index y apilamiento
+
+Nos habla de un eje el eje-z el cual es invisible, pero es un eje que es desde la pantalla del navegador hacia ti como usuario, basicamente lo que vamos a tener es elementos HTML uno sobre otro por ejemplo modales, pop-ups, y demás.
+
+El orden en HTML es importante debido a que todos los elementos que esten en la parte de abajo van a prevalecer por encima de los que estan en la parte superior.
+
+La propiedad z-index nos permite modificar esto, y funciona con ciertos tipo de position.
+
+
+
+
+Propiedades y valores de CSS más usados
+
+
+Layout:
+Display
+
+
+Modelo de caja:
+Margin
+Padding
+Border
+
+
+Tamaños:
+Width
+height
+
+
+Textos:
+Font-size
+Font-weight
+Font-family
+Text-align
+Color
+
+
+Colores de fondo
+Background
+Background-color
+
+
+
+
+
+
 
 
 

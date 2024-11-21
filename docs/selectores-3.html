@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta charset for encoding -->
+    <meta charset="UTF-8">
+    <!-- Responsive viewport settings -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Selectores 3</title>
+    <style>
+        p{
+            color: green;
+        }
+        p:hover{
+            color: greenyellow;
+        }
+
+        p::first-letter{
+            color: coral;
+        }
+
+        p::before{
+            content: '🐱‍👓';
+        }
+
+        p:hover::after{
+            content: '🐱‍🏍';
+        }
+
+        section p:nth-child(3){
+            color: cadetblue;
+        }
+
+        ::placeholder{
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenido principal -->
+    <header>
+        <h1>Encabezado principal</h1>
+        <p>Hola</p>
+    </header>
+    <main>
+        <section>
+            <p>Contenido de ejemplo</p>
+        </section>
+        <section>
+            <p>Platzi</p>
+            <p>Lo mejor</p>
+            <p>Siempre</p>
+        </section>
+        <form action="./">
+            <fieldset>
+                <legend><h2>Form</h2></legend>
+                <input type="text" placeholder="Nombre">
+            </fieldset>
+
+        </form>
+
+        
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024</p>
+    </footer>
+</body>
+</html>
